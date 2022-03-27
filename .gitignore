@@ -2,6 +2,7 @@
 /dist
 /public/dist
 /node_modules
+/views/home.hbs
 
 # Logs
 logs
