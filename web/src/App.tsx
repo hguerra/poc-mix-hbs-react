@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='App'>
-      <button type='button' onClick={() => setCount((count) => count + 1)}>
+      <button className="btn-large waves-effect waves-light orange" type='button' onClick={() => setCount((count) => count + 1)}>
         count is: {count}
       </button>
     </div>

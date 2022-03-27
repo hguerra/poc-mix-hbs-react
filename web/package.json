@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "shx rm -rf dist && tsc && vite build && shx cp -r dist ../public && shx rm -f ../public/dist/index.html",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
     "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
     "@vitejs/plugin-react": "1.0.7",
+    "shx": "0.3.4",
     "typescript": "4.5.4",
     "vite": "2.8.0"
   }
